@@ -1,0 +1,97 @@
+header {
+    background-color: rgb(5, 53, 5);
+}
+
+.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header-icon {
+    margin: 2em 0;
+    width: 206px;
+    display: inline;
+}
+
+.title {
+    color: #080808;
+    display: inline;
+    margin: 0 1.5em;
+    width: 60%;
+}
+
+.title ul {
+    position: absolute;
+    display: inline;
+    margin: 1.8em 0;
+    text-align: left;
+    font-size: 24px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.title li {
+    list-style-type: none;
+    display: inline block;
+    padding-bottom: .05em;
+    color: #FEFEFE
+}
+
+.title li::first-letter {
+    font-weight: bolder;
+    font-size: 26px;
+    color: #FE9
+}
+
+nav {
+    position: absolute;
+    top: 7.5em;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 .5em;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FF2C08;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #c00;
+}
+
+nav a:active {
+    color: #FCFCFC;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 1em;
+}
+
+footer {
+    background-color: green;
+    background: url("/img/bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-icon {
+    width: 206px;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #FEFEFE;
+    text-align: center;
+    margin-bottom: 2em;
+    cursor: default;
+}

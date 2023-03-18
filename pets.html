@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIEAEAO - Pets</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-header.css">
+    <link rel="stylesheet" href="css/style-body.css">
+    <link rel="stylesheet" href="css/style-pets.css">
+    <link rel="stylesheet" href="css/style-font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="box">
+            <a href="index.html"><img src="img/icon.png" alt="icone da aieaeao" class="header-icon"></a>
+            <h1 class="title">
+                <ul>
+                    <li>Associação</li>
+                    <li>Internacional</li>
+                    <li>Ecológica de</li>
+                    <li>Admiração a</li>
+                    <li>Equidnas</li>
+                    <li>Australianas e</li>
+                    <li>Ornintorrincos</li>
+                </ul>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="index.html#wiki">wiki</a></li>
+                    <li><a href="pets.html">pets</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pets">
+            <h2>Pets</h2>
+            <div class="pets-table">
+                <form class="filter">
+                    <fieldset>
+                        <label>Filtrar por nome: <input name="filter" id="filter" class="input"></label>
+                    </fieldset>
+                </form>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Peso(kg)</th>
+                            <th>Sexo</th>
+                            <th>Animal</th>
+                            <th>Idade</th>
+                            <th>Ovos Estimados</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-pets">
+                        
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    
+        <section class="container">
+            <h2>Adicionar novo pet</h2>
+            <ul class="menssagens-erro"></ul>
+            <form class="add-form" id="add-form">
+                <fieldset class="field">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="name" type="text" placeholder="Nome do seu pet" class="input">
+                    <label for="peso">Peso (kg):</label>
+                    <input id="peso" name="weight" type="text" placeholder="Peso do seu pet" class="input">
+                </fieldset>
+                <fieldset class="field-gender">
+                    <label for="gender">Sexo:</label>
+                    <label for="radio-m">
+                        <input type="radio" name="gender" value="male" id="radio-m"> Macho
+                    </label>
+
+                    <label for="radio-f">
+                        <input type="radio" name="gender" value="female" id="radio-f"> Fêmea
+                    </label>
+
+                    <label for="radio-o">
+                        <input type="radio" name="gender" value="hedgehog" id="radio-o" checked> Um lindo ouriço
+                    </label>
+                    <label class="checkbox"><input type="checkbox" name="pregnant"></checkbox> Grávida?</label>
+                </fieldset>
+                <fieldset class="field">
+                    <label for="animal">Animal:</label>
+                    <select class="select" name="animal">
+                        <option value="Ornitorrinco">Ornitorrinco</option>
+                        <option value="Equidna" selected>Equidna</option>
+                    </select>
+                </fieldset>
+                <fieldset class="field">
+                    <label for="age">Idade (anos):</label>
+                    <input type="number" name="age" placeholder="Idade do pet" value="3" max="23" min="0" class="input">
+                </fieldset>
+    
+                <button id="add" class="add-button">Adicionar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#header"><img src="img/icon.png" alt="icone da aieaeao" class="footer-icon"></a>
+        <p class="copyright">AIEAEAO &#169;</p>
+    </footer>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/calcula-ovos.js"></script>
+    <script type="text/javascript" src="js/filtra.js"></script>
+    <script type="text/javascript" src="js/remover-pet.js"></script>
+    <script type="text/javascript" src="js/save.js"></script>
+    <!-- <script type="text/javascript" src="js/busca-pacientes.js"></script> -->
+</body>
+
+</html>
